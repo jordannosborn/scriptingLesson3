@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>using arithmetic operations 2</title>
+        <script> 
+            let milk = Number(prompt("Enter quantity of milk (in litres):"))
+            let bread = Number(prompt("Enter quantity of bread:"))
+            let eggs = Number(prompt("Enter quantity of eggs:"))
+            milkPrice = milk * 1.10
+            breadPrice = bread * 3.00
+            eggsPrice = eggs * 0.65
+            total = milkPrice * breadPrice * eggsPrice 
+            message = "Arithmetic operatiors used"
+            message += "<br>Milk total :" + milkPrice
+            message += "<br>Bread total :" + breadPrice
+            message += "<br>Eggs total :" + eggsPrice
+            message += "<br>Total :" + total 
+            if (total <= 20.00) {
+                message += "<br>You have sufficient funds for this purchase";
+            }
+            else {
+                message += "<br>Insuffiicient funds, remove some items";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Using arithmetic operators</h1> 
+        <p>This program displays the total of your bread, milk, and eggs, and the total cost of the whole shopping trip.</p>
+        <p id="details">
+            <script>
+                document.getElementById("details").innerHTML = message 
+            </script>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Using dates</title>
+    </head>
+    <body>
+        <h1>Using Dates</h1>
+        <div id="details"></div>
+        <script>
+            const d = new Date(); 
+            let hours = d.getHours();
+            let message =""; 
+
+            if(hours < 12 && hours > 5){
+                message = "Good morning"
+            }
+            else if(hours <16){
+                message = "Good afternoon"
+            }
+            else {
+                message = "Good evening"
+            }
+            document.getElementById("details").innerHTML = message; 
+        </script>
+    </body>
+</html>

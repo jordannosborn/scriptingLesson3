@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Decision makning</title>
+    </head>
+    <body>
+        <h1>Decision making</h1>
+        <div id="details"></div>
+        <script>
+            let age = Number(prompt("Enter your age", 18))
+            if(age >= 18){
+                document.getElementById("details").innerHTML = "You MUST vote in the next elections"; 
+            }
+            else { 
+                document.getElementById("details").innerHTML = "Please wait a few years before you can vote."; 
+            }
+            document.getElementById("details").innerHTML = "Did you understand about voting age in Australia?"; 
+        </script> 
+    </body>
+</html>

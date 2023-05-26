@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JS Operators</title>
+    </head>
+    <body>
+        <h1>JS Operators</h1>
+        <h3>Arithmetic operators</h3>
+        <h5>++ Increment operator</h5>
+        <div id="details"></div>
+        <script> 
+            let num1 = 10; 
+            let num2 = ++num1; //pre-fix - increment happens BEFORE assignment (11,11)
+            document.getElementById("details").innerHTML = "<p>num1: " + num1 + "<br>num2: " + num2+"</p>"; 
+            num2 = num1++; //post-fix - increment happens After assignment (12,,11)
+            document.getElementById("details").innerHTML += "<p>num1: " + num1 + "<br>num2: " + num2+"</p>"; 
+            let result = 2 + num1++; 
+             document.getElementById("details").innerHTML += "<p>(Post-fix)<br>num1: " + num1 + "<br>result:" + result+"</p>"; 
+            result = 2 * ++num1; 
+             document.getElementById("details").innerHTML += "<p>(Post-fix)<br>num1: " + num1 + "<br>result:" + result+"</p>"; 
+            
+            let sum = 5; 
+            sum += 7; 
+            document.getElementById("details").innerHTML += "<p>(sum += 7 where sum was 5)<br>sum:" + sum; 
+            sum -= 2; 
+            document.getElementById("details").innerHTML += "<p>(sum += 2 where sum was 12)<br>sum:" + sum; 
+       </script>
+    </body>
+</html>
